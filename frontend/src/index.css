@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input {
+    @apply border border-gray-300 rounded-md shadow-sm px-4 py-2 w-full;
+    @apply focus:ring-1 focus:ring-blue-300 focus:border-blue-300;  
+}
+
+button {
+    @apply px-4 py-2 bg-custom-blue text-white rounded-md shadow-sm;
+    @apply hover:bg-blue-600;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* or any width you prefer */
+  }
+  
+  .card-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-body {
+    /* Additional styling */
+  }
+
+  .seats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .seat {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .seat:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+  }
+  
+  .seat.selected {
+    background-color: #4caf50;
+    color: white;
+  }
